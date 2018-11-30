@@ -1,4 +1,14 @@
-
+<!--
+author: hack0072008
+head: http://pingodata.qiniudn.com/jockchou-avatar.jpg
+date: 2018-11-30
+title: ec2挂载s3fs
+tags: ec2-s3fs
+images: http://pingodata.qiniudn.com/cube2.jpg
+category: ec2-s3fs
+status: publish
+summary: EC2使用S3FS
+-->
 
 # 官网：
     https://github.com/s3fs-fuse/s3fs-fuse
