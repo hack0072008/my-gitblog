@@ -1,0 +1,31 @@
+#GitBlog配置文件，使用4个空格代替Tab
+---
+url: /
+title: 华哥的天空
+subtitle: 请尽情的玩耍，给与指正
+theme: default
+enableCache: true
+highlight: true
+mathjax: false
+katex: false
+youyan:
+baiduAnalytics:
+keywords: 博客,Markdown博客,jockchou
+description: >
+    一个简单易用的Markdown博客系统
+version: 2.2
+author:
+    name: ZhangYh
+    email: 82806791@qq.com
+    github: hack0072008
+    weibo: null
+    avatar:
+blog:
+    recentSize: 5
+    pageSize: 10
+    pageBarSize: 5
+    allBlogsForPage: false
+text:
+    title: 声明
+    intro: >
+          本博客纯属个人使用，不做任何用途，请勿转载！
