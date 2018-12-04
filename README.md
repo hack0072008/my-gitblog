@@ -32,3 +32,13 @@
 
 #### open blog:
      http://hostname:port/ or http://www.xxx.com:port/
+
+##### format:
+     author: 博客作者名称 
+     date: 博客时间，用于页面显示，通常来说你不需要填写这个字段，默认就是创建日期 
+     title: 博客标题 
+     tags: 博客里的标签，多个用逗号或空格分隔 
+     category: 博客分类，多个用逗号或空格分隔 
+     status: 博客状态，draft表示草稿，GitBlog解析时会忽略草稿；publish表示发表状态，默认为publish 
+     summary: 博客摘要信息 以上所有信息都是独占一行，暂不支持写在多行。
+
