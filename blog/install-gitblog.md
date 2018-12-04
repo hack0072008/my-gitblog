@@ -2,10 +2,10 @@
 author: hack0072008
 head: http://pingodata.qiniudn.com/jockchou-avatar.jpg
 date: 2018-11-30
-title: My-gitblog
-tags: gitblog
+title: 树莓派3b+_gitblog
+tags: gitblog,3b+
 images: http://pingodata.qiniudn.com/cube2.jpg
-category: gitblog
+category: 3b+
 status: publish
 summary: gitblog 树莓派3b+安装
 -->

@@ -2,12 +2,12 @@
 author: hack0072008
 head: http://pingodata.qiniudn.com/jockchou-avatar.jpg
 date: 2018-11-30
-title: shell-yaml
-tags: shell-yaml
+title: shell-yaml的使用
+tags: shell,yaml
 images: http://pingodata.qiniudn.com/cube2.jpg
-category: shell-yaml
+category: shell
 status: publish
-summary: shell 解析yaml
+summary: shell解析yaml
 -->
 
 
