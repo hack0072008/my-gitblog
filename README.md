@@ -6,7 +6,13 @@
 
 #### clone gitblog:
      cd /var/www/
+     wget https://github.com/jockchou/gitblog/archive/v2.3.2.tar.gz
+     tar zxvf v2.3.2.tar.gz
+     mv gitblog-2.3.2 gitblog && rm -rf v2.3.2.tar.gz
+     cd gitblog
      git clone https://github.com/hack0072008/my-gitblog
+     mv my-gitblog/blog/* ./blog/
+     rm -rf my-gitblog
      
 #### modify config:
      cd /var/www/my-gitblog
