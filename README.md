@@ -1,4 +1,4 @@
-# my-gitblog
+# gitblog
 
 #### install package:
      参考：
