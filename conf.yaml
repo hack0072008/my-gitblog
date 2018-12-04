@@ -1,0 +1,31 @@
+#GitBlog配置文件，使用4个空格代替Tab
+---
+url: /
+title: 华哥的天空
+subtitle: 走自己的路，让别人说去吧
+theme: default
+enableCache: true
+highlight: true
+mathjax: true
+katex: true
+youyan:
+baiduAnalytics:
+keywords: Markdown,博客,华哥,Blog
+description: >
+    华哥的个人博客
+version: 2.2
+author:
+    name: 华哥
+    email: 82806791@qq.com
+    github: hack0072008
+    weibo: none
+    avatar:
+blog:
+    recentSize: 5
+    pageSize: 10
+    pageBarSize: 5
+    allBlogsForPage: false
+text:
+    title: -_-
+    intro: >
+          本博客仅限个人使用，欢迎转载，请注明出处!
