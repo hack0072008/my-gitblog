@@ -3,6 +3,8 @@
 #### install package:
      参考：
          https://github.com/hack0072008/personal_note/blob/master/my-gitblog.md 安装部分
+         
+         php,php-mysql,php-fpm,php-mbstring
 
 #### clone gitblog:
      cd /var/www/
@@ -12,26 +14,35 @@
      cd gitblog
      git clone https://github.com/hack0072008/my-gitblog
      mv my-gitblog/blog/* ./blog/
+     
+     cp gitblog.conf /etc/nginx/conf.d/
+     cp conf.yaml /var/www/gitblog/
+     cp index.php /var/www/
      rm -rf my-gitblog
      
 #### modify config:
-     cd /var/www/my-gitblog
-     vim apache2-ports.conf:port
-     vim nginx-conf.d-blog.conf: hostname,port
+     #php.ini 中的short_open_tag = On：
+     vim /etc/php/7.0/fpm/php.ini (ubuntu)
+     vim /etc/php.ini             (centos)
+     
+     #apache中的端口(改成非80、443,停用，否则会导致nginx端口冲突)：
+     vim /etc/apache2/ports.conf     (ubuntu)
+     vim /etc/http.d/conf/httpd.conf (centos)
+     
+     #停止apache
+     systemctl stop httpd
+     /etc/init.d/apache2 stop
+     
+     #修改nginx的gitblog.conf配置(hostname,port)
+     vim gitblog.conf
      //注意：如果有域名需要修改域名对应的A记录的解析IP地址
 
-#### copy config:
-     cd /var/www/my-gitblog
-     cp apache2-ports.conf /etc/apache2/ports.conf
-     cp nginx-conf.d-blog.conf /etc/nginx/conf.d/blog.conf
-     cp var-www-index.php /var/www/index.php
-     
 #### start blog:
-     /etc/init.d/nginx restart
-     /etc/inid./apache2 restart
+     /etc/init.d/nginx restart  or systemctl restart nginx
+     /etc/inid./apache2 restart or systemctl stop httpd
 
 #### open blog:
-     http://hostname:port/ or http://www.xxx.com:port/
+     http://hostname:port/ or https://www.xxx.com:port/
 
 ##### format:
      author: 博客作者名称 
