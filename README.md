@@ -1,10 +1,13 @@
 # gitblog
 
+#### doc:
+     https://www.bookstack.cn/read/gitblog/README.md
+
 #### install package:
      参考：
-         https://github.com/hack0072008/personal_note/blob/master/my-gitblog.md 安装部分
+         yum|apt-get install
          
-         php,php-mysql,php-fpm,php-mbstring
+         nginx,php,php-mysql,php-fpm,php-mbstring
 
 #### clone gitblog:
      cd /var/www/
