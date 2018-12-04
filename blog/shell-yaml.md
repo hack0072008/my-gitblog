@@ -1,10 +1,10 @@
 <!--
 author: hack0072008
-head: http://www.etcunion.com/static/zl01.jpg
+head: http://www.etcunion.com/static/logo1_128x128.jpg
 date: 2018-11-30
 title: shell-yaml的使用
 tags: shell,yaml
-images: http://www.etcunion.com/static/zl01.jpg
+images: http://www.etcunion.com/static/logo1_128x128.jpg
 category: shell
 status: publish
 summary: shell解析yaml
