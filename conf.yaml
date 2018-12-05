@@ -12,19 +12,19 @@ youyan:
 baiduAnalytics:
 keywords: Markdown,博客,华哥,Blog,aws,docker,python,k8s,jenkins,devops,EC2,S3,ECS,ECR
 description: >
-    华哥的个人博客
+    怀念青春的个人博客
 version: 2.2
 author:
-    name: 华哥
+    name: 怀念青春
     email: 82806791@qq.com
     github: hack0072008
     weibo: none
     avatar:
 blog:
-    recentSize: 5
+    recentSize: 10
     pageSize: 10
-    pageBarSize: 5
-    allBlogsForPage: false
+    pageBarSize: 10
+    allBlogsForPage: true
 text:
     title: -_-
     intro: >
