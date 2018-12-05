@@ -48,15 +48,19 @@
      http://hostname:port/ or https://www.xxx.com:port/
      
 #### 去掉原作者信息：
-     在 gitblog/theme/xxxx/index.html 中找到对应的子文件，去掉即可，例如default主题：gitblog/theme/default/index.html 内容的 block/footer.html 中保存原作则信息
+     在 gitblog/theme/xxxx/index.html 中找到对应的子文件，去掉即可，例如default主题：gitblog/theme/default/index.html 内容的 block/footer.html 中修改原作者信息
 
 #### 增加广告推广统计：
      在 gitblog/theme/xxxx/index.html 找到 能填写 head 部分内容,贴上广告商代码, 例如default主题：gitblog/theme/default/index.html 内容的 block/base.html 中的 head 下贴上google-ads代码即可
 
+####  default主题的尾部模板增加二维码
+     在 gitblog/theme/xxxx/index.html 中找到对应的子文件，去掉即可，例如default主题：gitblog/theme/default/index.html 内容的 block/footer.html 中保存二维码信息：
+     <img src="https://www.etcunion.com/static/qrcode.gif" width="369" height="369" alt="gif qrcode" />
+
 #### chrome 登陆googole用户一直101错误：
      chrome 关闭SwitchyOmega,挂上ss，登陆成功后一次后，在开启SwitchyOmega，即可正常使用.
      
-##### format:
+##### 路由标头信息:
      author: 博客作者名称 
      date: 博客时间，用于页面显示，通常来说你不需要填写这个字段，默认就是创建日期 
      title: 博客标题 
