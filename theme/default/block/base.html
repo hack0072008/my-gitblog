@@ -2,6 +2,15 @@
 <html lang="zh-CN" class="no-js">
 <head>
 {% block head %}
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4652524990078731",
+    enable_page_level_ads: true
+  });
+</script>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<meta name="keywords" content="{% block keywords %}{{ site.keywords }},{{ site.title }}{% endblock %}">
@@ -37,6 +46,7 @@
 	  s.parentNode.insertBefore(hm, s);
 	})();
 	</script>
+
 	{% endif %}
 
 {% endblock %}

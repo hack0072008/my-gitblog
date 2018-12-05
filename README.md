@@ -49,6 +49,12 @@
      
 #### 去掉原作者信息：
      在 gitblog/theme/xxxx/index.html 中找到对应的子文件，去掉即可，例如default主题：gitblog/theme/default/index.html 内容的 block/footer.html 中保存原作则信息
+
+#### 增加广告推广统计：
+     在 gitblog/theme/xxxx/index.html 找到 能填写 head 部分内容,贴上广告商代码, 例如default主题：gitblog/theme/default/index.html 内容的 block/base.html 中的 head 下贴上google-ads代码即可
+
+#### chrome 登陆googole用户一直101错误：
+     chrome 关闭SwitchyOmega,挂上ss，登陆成功后一次后，在开启SwitchyOmega，即可正常使用.
      
 ##### format:
      author: 博客作者名称 
