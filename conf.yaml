@@ -1,7 +1,7 @@
 #GitBlog配置文件，使用4个空格代替Tab
 ---
 url: /
-title: 华哥的天空
+title: 怀念青春
 subtitle: 走自己的路，让别人说去吧
 theme: default
 enableCache: true
@@ -10,7 +10,7 @@ mathjax: true
 katex: true
 youyan:
 baiduAnalytics:
-keywords: Markdown,博客,华哥,Blog
+keywords: Markdown,博客,华哥,Blog,aws,docker,python,k8s,jenkins,devops,EC2,S3,ECS,ECR
 description: >
     华哥的个人博客
 version: 2.2
