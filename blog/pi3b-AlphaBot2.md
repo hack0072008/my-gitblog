@@ -32,21 +32,22 @@ summary: 树莓派3b+使用AlphaBot2各模块
      Bluetooth-json                 蓝牙控制(json格式)
 
 ----
+****
 
 ### 树莓派控制程序(AlphaBot2.tar.gz):
 1. gpio
      - git clone git://git.drogon.net/wiringPi
-     - cd wiringPi
-     - ./build
+     + cd wiringPi
+     * ./build
      - gpio -v
      - gpio readall
 2. 红外遥控器控制
      cd ~/AlphaBot2/python
      python IRremote.py
-#### 电机测试
+3. 电机测试
      cd ~/AlphaBot2/python
      python AlphaBot2.py
-#### 五向摇杆
+4. 五向摇杆
      cd ~/AlphaBot2/python
      python Joystick.py
 #### 红外避障
