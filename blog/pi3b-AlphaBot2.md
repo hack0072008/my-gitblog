@@ -160,6 +160,7 @@ summary: 树莓派3b+使用AlphaBot2各模块
        cd /home/pi/AlphaBot/App-Contrl
        python main &
      g.可开启树莓派无线网络适配器的AP功能(不用连接WIFI)
+     
 #### 通过树莓派蓝牙遥控小车
      a.升级蓝牙软件包
        apt-get update
@@ -187,6 +188,7 @@ summary: 树莓派3b+使用AlphaBot2各模块
      g.cd /AlphaBot2/Bluetooth-Control
        rfcomm watch hci0 1 python bluetooth.py
      h.下载APP(只有安卓, page 45)
+       https://fir.im/hysk
      i.bluetoothctl
        discoverable on
        quit
