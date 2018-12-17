@@ -34,6 +34,8 @@ summary: 树莓派3b+使用AlphaBot2各模块
 ----
 
 ### 树莓派控制程序(AlphaBot2.tar.gz):
+     wget http://www.waveshare.net/w/upload/2/20/AlphaBot_Demo.7z
+     
 #### gpio
      git clone git://git.drogon.net/wiringPi
      cd wiringPi
