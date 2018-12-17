@@ -1,3 +1,18 @@
+<!--
+author: hack0072008
+head: http://www.etcunion.com/static/logo1_128x128.jpg
+date: 2018-12-17
+title: 树莓派3b+_wifi-ap
+tags: wifi-ap,3b+
+images: http://www.etcunion.com/static/logo1_128x128.jpg
+category: 3b+ wifi-ap
+status: publish
+summary: 树莓派3b+使用AP模式
+-->
+
+
+
+
 ### 树莓派设置wifi ap模式：
     参考：https://www.cnblogs.com/visionsl/p/8042315.html
     
