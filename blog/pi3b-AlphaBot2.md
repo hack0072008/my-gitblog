@@ -14,7 +14,7 @@ summary: 树莓派3b+使用AlphaBot2各模块
 
 
 
-#### Arduino控制程序：
+### Arduino控制程序：
      Run-Test                       电机测试
      Joystick 程序                  五向摇杆
      IR 程序                        红外遥控器控制
@@ -31,38 +31,32 @@ summary: 树莓派3b+使用AlphaBot2各模块
      Bluetooth                      蓝牙控制
      Bluetooth-json                 蓝牙控制(json格式)
 
-#### 树莓派控制程序(AlphaBot2.tar.gz):
-##### gpio
-     (```)
+### 树莓派控制程序(AlphaBot2.tar.gz):
+#### gpio
      git clone git://git.drogon.net/wiringPi
      cd wiringPi
      ./build
      gpio -v
      gpio readall
-     (```)
-##### 红外遥控器控制
-     (```)
+#### 红外遥控器控制
      cd ~/AlphaBot2/python
      python IRremote.py
-     (```)
-##### 电机测试
-     (```)
+#### 电机测试
      cd ~/AlphaBot2/python
      python AlphaBot2.py
-     (```)
-- 五向摇杆
+#### 五向摇杆
      cd ~/AlphaBot2/python
      python Joystick.py
-- 红外避障
+#### 红外避障
      cd ~/AlphaBot2/python
      python Infrared_Obstacle_Avoidance.py
-- 超声波测距（树莓派 3B 套餐不包含超声波模块）
+#### 超声波测距（树莓派 3B 套餐不包含超声波模块）
      cd ~/AlphaBot2/python
      python Ultrasonic_Rangeing.py
-- 超声波测距（树莓派 3B 套餐不包含超声波模块）
+#### 超声波测距（树莓派 3B 套餐不包含超声波模块）
      cd ~/AlphaBot2/python
      python Infrared_Obstacle_Avoidance.py
-- RGB 彩灯
+#### RGB 彩灯
      rpi_ws281x-master.zip
      unzip rpi_ws281x-master.zip
      
@@ -81,16 +75,16 @@ summary: 树莓派3b+使用AlphaBot2各模块
      
      cd ~/AlphaBot2/python
      python ws2812.py
-- 循迹传感器测试
+#### 循迹传感器测试
      cd ~/AlphaBot2/python
      python TRSensors.py
-- 红外循迹程序
+#### 红外循迹程序
      cd ~/AlphaBot2/python
      python LineFollow.py
-- 舵机
+#### 舵机
      cd ~/AlphaBot2/python
      python PCA9685.py
-- mjpg-streamer 软件实时监控
+#### mjpg-streamer 软件实时监控
      a,raspi-config 开启摄像头
      b,/etc/modules 添加一行:bcm2835-v4l2
      c,重启后,ls -ltr /dev/video0
@@ -99,7 +93,7 @@ summary: 树莓派3b+使用AlphaBot2各模块
      cd AlphaBot2/lib/mjpg-streamer
      ./start
      http://ip:8080/
-- 通过 webiopi 实现远程遥控
+#### 通过 webiopi 实现远程遥控
      cd AlphaBot2/lib/WebIOPi-0.7.1-raspi2
      ./setup.sh
      webiopi -h
@@ -125,7 +119,7 @@ summary: 树莓派3b+使用AlphaBot2各模块
      vim /etc/rc.local:
          cd /home/pi/AlphaBot2/lib/mjpg-streamer
          ./start.sh &
-- 通过 Bottle 实现远程遥控
+#### 通过 Bottle 实现远程遥控
      a.apt-get install python-bottle
      b.cd ~/AlphaBot2/Web-RGB
        python main
@@ -146,7 +140,7 @@ summary: 树莓派3b+使用AlphaBot2各模块
          interface wlan0
          static ip_address = 192.168.1.114/24
          static routers = 192.168.1.1
-- 通过软件远程遥控小车
+#### 通过软件远程遥控小车
      a.cd ~/AlphaBot2/App-Control
      b.vim main.py:
        Host = '192.168.10.235'
@@ -161,7 +155,7 @@ summary: 树莓派3b+使用AlphaBot2各模块
        cd /home/pi/AlphaBot/App-Contrl
        python main &
      g.可开启树莓派无线网络适配器的AP功能(不用连接WIFI)
-- 通过树莓派蓝牙遥控小车
+#### 通过树莓派蓝牙遥控小车
      a.升级蓝牙软件包
        apt-get update
        apt-get upgrade -y
