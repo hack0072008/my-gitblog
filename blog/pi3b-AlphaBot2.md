@@ -34,7 +34,7 @@ summary: 树莓派3b+使用AlphaBot2各模块
 ----
 
 ### 树莓派控制程序(AlphaBot2.tar.gz):
-     wget http://www.waveshare.net/w/upload/2/20/AlphaBot_Demo.7z
+     wget http://www.waveshare.net/w/upload/e/ee/AlphaBot2-Demo.7z
      wget http://www.waveshare.net/w/upload/c/c3/Rpi_ws281x-master.zip
      
 #### gpio
