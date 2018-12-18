@@ -1,8 +1,28 @@
-
+<!--
+author: hack0072008
+head: http://www.etcunion.com/static/logo1_128x128.jpg
+date: 2018-12-18
+title: 树莓派3b+_vim颜色主题
+tags: vim,3b+
+images: http://www.etcunion.com/static/logo1_128x128.jpg
+category: 3b+ vim
+status: publish
+summary: 树莓派3b+ 修改vim主题
+-->
 
 
 
 ### vim主题颜色设置
+    环境: 树莓派3b+ ubuntu vim8
+          uname -a
+          Linux pi 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Linux
+          
+          vim --version
+          VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Sep 30 2017 18:21:38)
+          Included patches: 1-197, 322, 377-378, 550, 703, 706-707
+          Modified by pkg-vim-maintainers@lists.alioth.debian.org
+          Compiled by pkg-vim-maintainers@lists.alioth.debian.org
+          ...
 
 #### 1.查看vim配置文件
     先查看是否有用户配置文件
