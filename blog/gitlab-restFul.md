@@ -11,6 +11,9 @@ summary: python api操作gitlab
 -->
 
 
+### gitlab官方文档
+    参考：
+        https://docs.gitlab.com/ce/api/README.html
 
 
 #### import
