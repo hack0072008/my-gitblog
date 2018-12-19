@@ -10,7 +10,8 @@
     <span class="byline">
         <span class="author vcard">
             <span class="screen-reader-text">Author </span>
-            {{ blog.author }}
+            <!-- {{ blog.author }} modify by zhangyh 20181219-->
+            <a href="https://github.com/{{ category.url }}" rel="author">{{ blog.author }}</a>
         </span>
     </span>
     {% endif %}
