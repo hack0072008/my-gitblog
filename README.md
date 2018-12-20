@@ -73,9 +73,12 @@
      <a href="https://github.com/{{ category.url }}" rel="author">{{ blog.author }}</a>
 
 #### blog增加两大评论系统，disqus 和 gitalk:
-     一.disqus本身自带，只是需要在conf.yaml中增加配置项:disqus,值为disqus的用户名即可
+     一.disqus本身自带，只是需要在conf.yaml中增加配置项:disqus,值为disqus的用户名即可,例如：
+        conf.yaml:
+            disqus: zhangyh
         参考：
             https://www.jianshu.com/p/7e4453421b8f
+            
      二.gitalk评论系统,修改：theme/default/block/comments.html，增加相应代码
         a.github中增加oauth apps授权(对域名和主页授权，创建一个apps)，得到ID和Secret
         b.github创建存放评论的仓库,比如myblog-issue
