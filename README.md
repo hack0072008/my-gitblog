@@ -71,7 +71,37 @@
 #### 支持blog列表的github用户链接：
      修改 ./theme/default/blog/footer.html  中 < {{ blog.author }} >修改为:
      <a href="https://github.com/{{ category.url }}" rel="author">{{ blog.author }}</a>
-     
+
+#### blog增加两大评论系统，disqus 和 gitalk:
+     一.disqus本身自带，只是需要在conf.yaml中增加配置项:disqus,值为disqus的用户名即可
+        参考：
+            https://www.jianshu.com/p/7e4453421b8f
+     二.gitalk评论系统,修改：theme/default/block/comments.html，增加相应代码
+        a.github中增加oauth apps授权(对域名和主页授权，创建一个apps)，得到ID和Secret
+        b.github创建存放评论的仓库,比如myblog-issue
+        c.修改以下代码中的参数gitalk的主要参数，然后贴到theme/default/block/comments.html中：
+            <!-- Gitalk 评论 start  -->
+            
+            <!-- Link Gitalk 的支持文件  -->
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+            <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+            <div id="gitalk-container"></div>     <script type="text/javascript">
+                var gitalk = new Gitalk({
+            
+                // gitalk的主要参数
+            		clientID: `Github Application clientID`,
+            		clientSecret: `Github Application clientSecret`,
+            		repo: `存储你评论 issue 的 Github 仓库名`,
+            		owner: 'Github 用户名',
+            		admin: ['Github 用户名'],
+            		id: '页面的唯一标识，gitalk会根据这个标识自动创建的issue的标签',
+                
+                });
+                gitalk.render('gitalk-container');
+            </script> 
+            <!-- Gitalk end -->
+        参考：
+            http://qiubaiying.top/2017/12/19/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0-Gitalk-%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/
      
 ##### 路由标头信息:
      author: 博客作者名称 
