@@ -73,9 +73,11 @@
      <a href="https://github.com/{{ category.url }}" rel="author">{{ blog.author }}</a>
 
 #### blog增加两大评论系统，disqus 和 gitalk:
-     一.disqus本身自带，只是需要在conf.yaml中增加配置项:disqus,值为disqus的用户名即可,例如：
+     一.通过阅读gitblog源码发现,本身自带disqus解析，只是需要在conf.yaml中增加配置项:disqus,值为disqus的用户名即可,例如：
         conf.yaml:
             disqus: zhangyh
+        如想取消disqus,disqus值留空即可
+        
         参考：
             https://www.jianshu.com/p/7e4453421b8f
             
@@ -84,7 +86,6 @@
         b.github创建存放评论的仓库,比如myblog-issue
         c.修改以下代码中的参数gitalk的主要参数，然后贴到theme/default/block/comments.html中：
             <!-- Gitalk 评论 start  -->
-            
             <!-- Link Gitalk 的支持文件  -->
             <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
             <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
