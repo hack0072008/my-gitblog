@@ -100,6 +100,7 @@
                 gitalk.render('gitalk-container');
             </script> 
             <!-- Gitalk end -->
+        d.评论汇总在：https://github.com/hack0072008/myblog-issue/issues
         参考：
             http://qiubaiying.top/2017/12/19/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0-Gitalk-%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/
      
