@@ -23,3 +23,25 @@
 <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid={{site.youyan}}"></script>
 <!-- UY END -->
 {% endif %}
+
+<!-- Gitalk 评论 start  -->
+
+<!-- Link Gitalk 的支持文件  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+<div id="gitalk-container"></div>     <script type="text/javascript">
+    var gitalk = new Gitalk({
+
+    // gitalk的主要参数
+		clientID: '4b0978d48e46314a781e',
+		clientSecret: 'd807ebdf511c4fbc6143c13f6b8069a2edaa6d29',
+		repo: 'myblog-issue',
+		owner: 'hack0072008',
+		admin: ['hack0072008'],
+		id: 'ali-hk-myblog',
+    
+    });
+    gitalk.render('gitalk-container');
+</script> 
+
+<!-- Gitalk end -->

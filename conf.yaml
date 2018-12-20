@@ -9,6 +9,7 @@ highlight: true
 mathjax: true
 katex: true
 youyan:
+disqus: zhangyh
 baiduAnalytics:
 keywords: Markdown,博客,华哥,Blog,aws,docker,python,k8s,jenkins,devops,EC2,S3,ECS,ECR
 description: >
