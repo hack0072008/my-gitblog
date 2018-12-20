@@ -60,6 +60,19 @@
 #### chrome 登陆googole用户一直101错误：
      chrome 关闭SwitchyOmega,挂上ss，登陆成功后一次后，在开启SwitchyOmega，即可正常使用.
      
+#### 增加访问次数统计：
+     https://busuanzi.ibruce.info/
+     修改 ./theme/default/block/footer.html,<div class="site-info">标签下：
+        <hr>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+        <br>
+        
+#### 支持blog列表的github用户链接：
+     修改 ./theme/default/blog/footer.html  中 < {{ blog.author }} >修改为:
+     <a href="https://github.com/{{ category.url }}" rel="author">{{ blog.author }}</a>
+     
+     
 ##### 路由标头信息:
      author: 博客作者名称 
      date: 博客时间，用于页面显示，通常来说你不需要填写这个字段，默认就是创建日期 
