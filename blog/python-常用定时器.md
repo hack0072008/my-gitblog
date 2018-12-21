@@ -30,7 +30,7 @@ summary: python
     pip install apscheduler
     ```
 
-    ```python
+     "`python
     from apscheduler.schedulers.blocking import BlockingScheduler
     from datetime import datetime
     # 输出时间
@@ -40,7 +40,7 @@ summary: python
     scheduler = BlockingScheduler()
     scheduler.add_job(job, 'cron', day_of_week='1-5', hour=6, minute=30)
     scheduler.start()
-    ```
+    `"
 
 
 
