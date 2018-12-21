@@ -83,6 +83,39 @@ main(10)
     scheduler.start()
 ```
 
+```
+from datetime import datetime
+from pymongo import MongoClient
+from apscheduler.schedulers.blocking import BlockingScheduler
+from apscheduler.jobstores.memory import MemoryJobStore
+from apscheduler.jobstores.mongodb import MongoDBJobStore
+from apscheduler.executors.pool import ThreadPoolExecutor, ProcessPoolExecutor
+# MongoDB 参数
+host = '127.0.0.1'
+port = 27017
+client = MongoClient(host, port)
+# 输出时间
+def job():
+    print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+# 存储方式
+jobstores = {
+    'mongo': MongoDBJobStore(collection='job', database='test', client=client),
+    'default': MemoryJobStore()
+}
+executors = {
+    'default': ThreadPoolExecutor(10),
+    'processpool': ProcessPoolExecutor(3)
+}
+job_defaults = {
+    'coalesce': False,
+    'max_instances': 3
+}
+scheduler = BlockingScheduler(jobstores=jobstores, executors=executors, job_defaults=job_defaults)
+scheduler.add_job(job, 'interval', seconds=5, jobstore='mongo')
+scheduler.start()
+```
+
+
 
 
 
