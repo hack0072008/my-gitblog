@@ -13,17 +13,57 @@ summary: python
 
 
 ### python中常用的几种定时器
-     参考：https://lz5z.com/Python%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F/
-     
+['参考']：https://lz5z.com/Python%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F/ "参考"
+  
+  
 #### 循环 sleep
-
+```python
+from datetime import datetime
+import time
+# 每n秒执行一次
+def timer(n):
+    while True:
+        print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+        time.sleep(n)
+# 5s
+timer(5)
+```
 
 
 #### threading模块中的Timer
-
+```python
+from datetime import datetime
+from threading import Timer
+# 打印时间函数
+def printTime(inc):
+    print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+    t = Timer(inc, printTime, (inc,))
+    t.start()
+# 5s
+printTime(5)
+```
 
 #### 使用sched模块
-
+```
+import sched
+import time
+from datetime import datetime
+# 初始化sched模块的 scheduler 类
+# 第一个参数是一个可以返回时间戳的函数，第二个参数可以在定时未到达之前阻塞。
+schedule = sched.scheduler(time.time, time.sleep)
+# 被周期性调度触发的函数
+def printTime(inc):
+    print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+    schedule.enter(inc, 0, printTime, (inc,))
+# 默认参数60s
+def main(inc=60):
+    # enter四个参数分别为：间隔事件、优先级（用于同时间到达的两个事件同时执行时定序）、被调用触发的函数，
+    # 给该触发函数的参数（tuple形式）
+    schedule.enter(0, 0, printTime, (inc,))
+    schedule.run()
+# 10s 输出一次
+main(10)
+```
 
 #### APScheduler定时框架
 ```Bash
