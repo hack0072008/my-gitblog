@@ -11,7 +11,8 @@ summary: python api操作jenkins
 -->
 
 
-
+#### 安装
+    pip install python-jenkins
 
 #### import
     >>> import jenkins
