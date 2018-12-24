@@ -13,6 +13,7 @@ summary: python api操作gitlab
 
 ### gitlab官方文档
     pip install python-gitlab
+    
     参考：
         https://docs.gitlab.com/ce/api/README.html
 
