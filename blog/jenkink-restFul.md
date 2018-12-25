@@ -13,6 +13,9 @@ summary: python api操作jenkins
 
 #### 安装
     pip install python-jenkins
+    
+    doc参考：
+        https://python-jenkins.readthedocs.io/en/latest/api.html
 
 #### import
     >>> import jenkins
