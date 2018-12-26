@@ -23,7 +23,7 @@ summary: 个人网盘-seafile的搭建与使用
         https://www.seafile.com/download/
     
     example:
-    wget https://download.seadrive.org/seafile-server_6.3.4_x86-64.tar.gz
+        wget https://download.seadrive.org/seafile-server_6.3.4_x86-64.tar.gz
 
 #### 参考文档：
     https://manual-cn.seafile.com/deploy/using_sqlite.html
