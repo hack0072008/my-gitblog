@@ -19,6 +19,10 @@ summary: 个人网盘-seafile的搭建与使用
 
 
 ####  下载：
+    download:
+        https://www.seafile.com/download/
+    
+    example:
     wget https://download.seadrive.org/seafile-server_6.3.4_x86-64.tar.gz
 
 #### 参考文档：
