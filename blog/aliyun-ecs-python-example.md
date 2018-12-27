@@ -15,7 +15,14 @@ summary: python sdk 操作aliyun的ecs
     pip install aliyun-python-sdk-core
     pip install aliyun-python-sdk-ecs
 
-
+#### aliyun SDK:
+    SDK:
+        https://github.com/aliyun/aliyun-openapi-python-sdk
+    
+    use example:
+        https://github.com/aliyun/aliyun-openapi-python-sdk#use-python-sdk 
+        
+        
 #### python demo:
 ```python
 from aliyunsdkcore import client
