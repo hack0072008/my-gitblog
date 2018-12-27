@@ -14,6 +14,9 @@ summary: python sdk 操作aliyun的ecs
 ### python sdk方式操作aliyun ECS:
     pip install aliyun-python-sdk-core
     pip install aliyun-python-sdk-ecs
+    
+    参考：
+        https://develop.aliyun.com/tools/sdk?#/python
 
 #### aliyun SDK:
     SDK:
