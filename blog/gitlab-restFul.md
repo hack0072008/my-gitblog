@@ -39,6 +39,15 @@ summary: python api操作gitlab
     for p in gl.projects.list(all=True, as_list=False):
         print(p.name, p.id)
 
+#### 获取某个id的project下的某个文件的内容：
+     api:
+         https://docs.gitlab.com/ce/api/repository_files.html#get-file-from-repository
+         example:
+             GET /projects/:id/repository/files/:file_path
+             curl --request GET --header 'PRIVATE-TOKEN: 9koXpg98eAheJpvBs5tK' 'https://gitlab.example.com/api/v4/projects/13083/repository/files/app%2Fmodels%2Fkey%2Erb?ref=master'
+             
+     参考：
+         https://blog.csdn.net/felix_yujing/article/details/52712925
 
 #### 获取第一页project的name,id
     for p in gl.projects.list(page=1):
@@ -144,7 +153,8 @@ summary: python api操作gitlab
 ## groups/project members's api
     参考：
         https://docs.gitlab.com/ce/api/members.html
-    
+
+
     
 ~~待续~~
 
