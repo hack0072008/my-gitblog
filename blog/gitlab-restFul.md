@@ -49,6 +49,47 @@ summary: python api操作gitlab
      参考：
          https://blog.csdn.net/felix_yujing/article/details/52712925
 
+
+```python
+
+>>> import gitlab
+>>> private_token = 'xxx'
+>>> host = 'https://git.xxx.yyy.com'
+>>> port = '443'
+>>> email = 'admin@example.com'
+>>> branch = 'master'
+>>> timeout = 60
+>>> project_name = 'camera'
+>>> file_path = '/execenv/execenv.yml'
+
+>>> client = gitlab.Gitlab('{0}:{1}'.format(host, port), email, private_token, timeout)
+
+>>> project_objects = client.projects.list(search = project_name)
+>>> project_id = None
+>>> for item in project_objects:
+...     if item.name == project_name:
+...         project_id = item.id
+...     else:
+...         continue
+>>> project_id
+64
+
+>>> url = '{0}:{1}/api/v4/projects/{2}/repository/files?private_token={3}&file_path={4}&ref={5}'.format(host, port, project_id, private_token, file_path, branch)
+>>> result = requests.get(url)
+>>> data = result.json()
+>>> content = base64.b64decode(data['content'])
+>>> print content
+---
+os: linux
+version: 1.0
+appService: camera
+
+exec:
+  - type: java
+    version: 1.8
+    verify: java -version
+```
+
 #### 获取第一页project的name,id
     for p in gl.projects.list(page=1):
         print(p.name, p.id)
