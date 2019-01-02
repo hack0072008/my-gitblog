@@ -89,7 +89,23 @@ exec:
     version: 1.8
     verify: java -version
 ```
+#### 更新某个id的project下的某个文件内容：
+    api:
+        https://docs.gitlab.com/ce/api/repository_files.html#update-existing-file-in-repository
+    
+    example:
+        PUT /projects/:id/repository/files/:file_path
+        curl --request PUT --header 'PRIVATE-TOKEN: 9koXpg98eAheJpvBs5tK' --header "Content-Type: application/json" \
+             --data '{"branch": "master", "author_email": "author@example.com", "author_name": "Firstname Lastname", \
+    "content": "some content", "commit_message": "update file"}' \
+             'https://gitlab.example.com/api/v4/projects/13083/repository/files/app%2Fproject%2Erb'
+        response:
+            {
+                "file_path": "app/project.rb",
+                "branch": "master"
+            }
 
+  
 #### 获取第一页project的name,id
     for p in gl.projects.list(page=1):
         print(p.name, p.id)
