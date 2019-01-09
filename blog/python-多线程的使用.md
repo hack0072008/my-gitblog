@@ -72,6 +72,9 @@ for i in xrange(4):
     
 
 ### centos进程下线程信息查看：
+    参考：
+        https://www.cnblogs.com/EasonJim/p/8098217.html
+
     方法一：
 ```shell
 ps -T -p 2446
