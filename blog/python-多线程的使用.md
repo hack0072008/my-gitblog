@@ -80,7 +80,7 @@ ps -T -p 2446
 ```shell
 top -H -p 2446
 ```
-    方法三
+    方法三：
 ```shell
 yum install -y htop
 htop
