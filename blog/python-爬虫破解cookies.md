@@ -18,6 +18,9 @@ summary: python-爬虫破解cookies
 
 
 ```python
+
+
+
 # -*- coding: utf-8 -*-
 """
 -------------------------------------------------
@@ -94,4 +97,8 @@ print cookie
 
 # 带上Cookie再次访问url,获取正确数据
 print getHtml(TARGET_URL, cookie)[0:500]
+
+
+
+
 ```
