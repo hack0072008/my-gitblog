@@ -18,3 +18,5 @@ summary: 在线演示PPT
 ### docs-online
     https://docs.zoho.com.cn 已注册
     
+### workflow-online
+    https://online.visual-paradigm.com/cn/login.jsp 已注册
