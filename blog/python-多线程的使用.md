@@ -15,6 +15,9 @@ summary: python-多线程的使用
 
 ### 参考：
     https://www.cnblogs.com/tkqasn/p/5700281.html
+    
+    阻塞模式的使用：
+    https://www.cnblogs.com/cnkai/p/7504980.html
 
 ### 多线程方法一
 ```python
