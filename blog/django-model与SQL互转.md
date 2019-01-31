@@ -24,9 +24,14 @@ summary: django-model与SQL互转
     src/pyodbc.h:56:17: 致命错误：sql.h：没有那个文件或目录
     
     解决：
-        yum install unixodbc-dev
+        yum install unixODBC unixODBC-devel
         再重装
 
+#### 错误二：
+    django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb.
+    
+    解决：
+        pip install mysql-python
 
 
 #### 配置django databases
@@ -44,6 +49,9 @@ DATABASES = {
 ```
 
 #### SQL转model
+```shell
+python manage.py inspectdb > app/models.py
+```
 
 #### model转SQL
 
