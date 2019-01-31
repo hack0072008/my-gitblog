@@ -33,6 +33,17 @@ summary: django-model与SQL互转
     解决：
         pip install mysql-python
 
+#### 错误三：
+    sh: mysql_config: 未找到命令
+    
+    解决：
+        yum install mysql-devel
+        
+#### 错误四：
+    django.db.utils.OperationalError: (1045, "Access denied for user 'root'@'127.0.0.1' (using password: YES)")
+    
+    解决：
+        开启mysql root用户密码登录，并检查`数据库用户名、密码、数据库库名配置`信息
 
 #### 配置django databases
 ```shell
@@ -50,11 +61,11 @@ DATABASES = {
 
 #### SQL转model
 ```shell
-python manage.py inspectdb > app/models.py
+python manage.py inspectdb > ./app_name/models.py
 ```
 
 #### model转SQL
-
+    django1.9不支持，只能用django命令 创建数据库更改`python manage.py makemigrations`、应用数据库`python manage.py migrate`，再用工具导出SQL
 
 
 
