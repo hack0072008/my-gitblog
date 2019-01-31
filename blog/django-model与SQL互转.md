@@ -65,8 +65,9 @@ python manage.py inspectdb > ./app_name/models.py
 ```
 
 #### model转SQL
-    django1.9不支持，只能用django命令 创建数据库更改`python manage.py makemigrations`、应用数据库`python manage.py migrate`，再用工具导出SQL
-
+    - django1.9不支持，只能用django命令 创建数据库更改`python manage.py makemigrations`、应用数据库`python manage.py migrate`，再用工具导出SQL
+    - 老版本django可以用 `python manage.py sqlall app_name`命令把model转sql
+    
 
 
 ~~完~~
