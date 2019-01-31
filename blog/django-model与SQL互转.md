@@ -1,3 +1,14 @@
+<!--
+author: hack0072008
+head: http://www.etcunion.com/static/logo1_128x128.jpg
+date: 2019-01-31
+title: django-model与SQL互转
+tags: python,django
+images: http://www.etcunion.com/static/logo1_128x128.jpg
+category: linux
+status: publish
+summary: django-model与SQL互转
+-->
 
 
 ### django的model与SQL互相转换
