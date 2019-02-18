@@ -84,7 +84,7 @@ summary: 分享一些好用的Chrome扩展
 
 ##### 15. Isometric Contributions
     装X神器，值得拥有。这里放上我心中的偶像 Linus 的贡献图。
-链接：https://chrome.google.com/webstore/detail/isometric-contributions/mjoedlfflcchnleknnceiplgaeoegien
+链接：[Isometric Contributions](https://chrome.google.com/webstore/detail/isometric-contributions/mjoedlfflcchnleknnceiplgaeoegien)
 
 ##### 16. Git History
     这个扩展可以很炫酷地展示 GitHub 中任意一个文件的历史修改情况。
