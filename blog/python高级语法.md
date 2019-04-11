@@ -11,7 +11,7 @@ summary: python syntax
 -->
 
 
-#### getattr,setattr,hasattr语法
+#### 1.getattr,setattr,hasattr语法
 ```python
 class Student(object):
     def __init(self):
@@ -40,7 +40,7 @@ getattr(s, 'age')
 
 ``` 
 
-#### property, xxxx.setter语法
+#### 2.property, xxxx.setter语法
 ```python
 #参考上面demo
 s = Student()
