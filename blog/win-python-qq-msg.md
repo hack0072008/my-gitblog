@@ -11,7 +11,7 @@ summary: python QQ消息 windows
 -->
 
 #### 说明
-    在window x64下python3.6 给已登录的QQ指定好友发送指定的消息,再结合flask转化为http模式,测试成功
+    在window x64下python3.7.3 给已登录的QQ指定好友发送指定的消息,再结合flask转化为http模式,测试成功
     遗留问题：QQ组合键发送消息测试不通过
 
 ```python
@@ -43,7 +43,7 @@ useage:
 
 '''
 windows 64(专业版)
-python 3.6
+python 3.7.3
 pip install pywin32
 
 QQ9.0.1(23161)
