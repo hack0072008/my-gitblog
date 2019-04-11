@@ -30,14 +30,24 @@ class Student(object):
     def p_score(self, str):
         print "%s, score:%s" % (str, self._score)
         
-s = Student()
-hasattr(s, 'score')
-getattr(s, 'score')
-setattr(s, 'age', 20)
-
-hasatrr(s, 'age')
-getattr(s, 'age')
-
+>>> s = Student()
+>>> hasattr(s, 'score')
+False
+>>> getattr(s, 'score')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 6, in score
+AttributeError: 'Student' object has no attribute '_score'
+>>> setattr(s, 'age', 20)
+>>> hasattr(s, 'age')
+True
+>>> getattr(s, 'age')
+20
+>>> s.score = 90
+>>> getattr(s, 'score')
+90
+>>> hasattr(s, 'score')
+True
 ``` 
 
 #### 2.property, xxxx.setter语法
