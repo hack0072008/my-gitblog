@@ -133,7 +133,33 @@ sqlalchemy/__init__.py'>,
 
 
 ```
+#### 4.自定义异常
+```python
+class ValidationError(Exception):
+    def __init__(self, message, code=None, params=None):
+        """The requested model field does not exist"""
+        super(ValidationError, self).__init__(message, code, params)
+    
+    def __iter__(self):
+        if hasattr(self, 'error_dict'):
+            for field, errors in self.error_dict.items():
+                yield field, list(ValidationError(errors))
+        else:
+            for error in self.error_list:
+                message = error.message
+                if error.params:
+                    message %= error.params
+                yield force_text(message)
 
+    def __str__(self):
+        if hasattr(self, 'error_dict'):
+            return repr(dict(self))
+        return repr(list(self))
+
+    def __repr__(self):
+        return 'ValidationError(%s)' % self
+
+```
 
 
 
