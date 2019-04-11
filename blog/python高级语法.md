@@ -135,6 +135,8 @@ sqlalchemy/__init__.py'>,
 ```
 #### 4.自定义异常
 ```python
+#参考：lib64/python2.7/site-packages/django/core/exceptions.py
+
 class ValidationError(Exception):
     def __init__(self, message, code=None, params=None):
         """The requested model field does not exist"""
