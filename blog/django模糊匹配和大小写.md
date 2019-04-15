@@ -1,3 +1,15 @@
+<!--
+author: hack0072008
+head: http://www.etcunion.com/static/logo1_128x128.jpg
+date: 2019-04-15
+title: django模糊匹配和大小写 
+tags: python django
+images: http://www.etcunion.com/static/logo1_128x128.jpg
+category: python django filter
+status: publish
+summary: django模糊匹配和大小写
+-->
+
 
 #### example:
 ```python
