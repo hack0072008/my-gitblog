@@ -60,6 +60,10 @@ s.score       #Student类的getter:def score(self)
 
 #### 3.importlib语法
 ```python
+'''
+    importlib.util py3特有
+    imp            py2特有
+'''
 
 #动态引入
 #importer.py
@@ -131,7 +135,16 @@ Successfully installed SQLAlchemy-1.1.0b1.dev0
 sqlalchemy/__init__.py'>,
 '__loader__': <class '_frozen_importlib.BuiltinImporter'>}
 
-
+#class检查
+def __file_classes__(self, py_path, py_name):
+    '''
+        inspect:ismodule(), isclass(), ismethod(), isfunction()
+    '''
+    import inspect,imp
+    mod = imp.load_source(py_name.split('.')[0], py_path + '/' + py_name)
+    #mod = importlib.import_module('commCrypt3DES')
+    return [item for item in vars(mod).keys() if inspect.isclass(vars(mod)[item])]
+        
 ```
 #### 4.自定义异常
 ```python
