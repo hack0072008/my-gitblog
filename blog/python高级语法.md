@@ -186,8 +186,10 @@ class ValidationError(Exception):
 ```python
 import sys
 
-sys.path
-sys.modules
+>>> sys.path
+>>> ['', '/usr/lib/python2.7/site-packages/webkit2png-0.8.3-py2.7.egg', '/usr/lib64/python27.zip', '/usr/lib64/python2.7', '/usr/lib64/python2.7/plat-linux2', '/usr/lib64/python2.7/lib-tk', '/usr/lib64/python2.7/lib-old', '/usr/lib64/python2.7/lib-dynload', '/usr/lib64/python2.7/site-packages', '/usr/lib64/python2.7/site-packages/PIL', '/usr/lib/python2.7/site-packages']
+>>> sys.modules
+>>> {'Crypto.Protocol': <module 'Crypto.Protocol' from '/usr/lib64/python2.7/site-packages/Crypto/Protocol/__init__.pyc'>,...}
 
 help(sys)
     __stderr__ = <open file '<stderr>', mode 'w'>
