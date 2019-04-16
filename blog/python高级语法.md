@@ -235,7 +235,7 @@ help(sys)
 ```
 
 #### django源码学习
-    参考：https://www.cnblogs.com/richiewlq/p/8287341.html
+    参考：http://www.cnblogs.com/richiewlq/category/1148206.html
     
 
 
