@@ -177,5 +177,55 @@ class ValidationError(Exception):
 ```
 
 
+#### 5.sys包
+```python
+import sys
+
+sys.path
+sys.modules
+
+help(sys)
+    __stderr__ = <open file '<stderr>', mode 'w'>
+    __stdin__ = <open file '<stdin>', mode 'r'>
+    __stdout__ = <open file '<stdout>', mode 'w'>
+    api_version = 1013
+    argv = ['']
+    builtin_module_names = ('__builtin__', '__main__', '_ast', '_codecs', ...
+    byteorder = 'little'
+    copyright = 'Copyright (c) 2001-2013 Python Software Foundati...ematis...
+    dont_write_bytecode = False
+    exc_value = TypeError("<module 'sys' (built-in)> is a built-in module"...
+    exec_prefix = '/usr'
+    executable = '/usr/bin/python'
+    flags = sys.flags(debug=0, py3k_warning=0, division_warn...unicode=0, ...
+    float_info = sys.float_info(max=1.7976931348623157e+308, max_...epsilo...
+    float_repr_style = 'short'
+    hexversion = 34014704
+    last_value = NameError("name 'sys' is not defined",)
+    long_info = sys.long_info(bits_per_digit=30, sizeof_digit=4)
+    maxint = 9223372036854775807
+    maxsize = 9223372036854775807
+    maxunicode = 1114111
+    meta_path = []
+    modules = {'Crypto': <module 'Crypto' from '/usr/lib64/python2.7/site-...
+    path = ['', '/usr/lib/python2.7/site-packages/webkit2png-0.8.3-py2.7.e...
+    path_hooks = [<type 'zipimport.zipimporter'>]
+    path_importer_cache = {'': None, '/usr/lib/python2.7/site-packages': N...
+    platform = 'linux2'
+    prefix = '/usr'
+    ps1 = '>>> '
+    ps2 = '... '
+    py3kwarning = False
+    pydebug = False
+    stderr = <open file '<stderr>', mode 'w'>
+    stdin = <open file '<stdin>', mode 'r'>
+    stdout = <open file '<stdout>', mode 'w'>
+    subversion = ('CPython', '', '')
+    version = '2.7.5 (default, Jul 13 2018, 13:06:57) \n[GCC 4.8.5 2015062...
+    version_info = sys.version_info(major=2, minor=7, micro=5, releaseleve...
+    warnoptions = []
+
+```
+
 
 ~~待续~~
