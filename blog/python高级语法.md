@@ -178,10 +178,10 @@ class ValidationError(Exception):
 
 
 #### 5.sys包
-    - 获取当前import path
+1. 获取当前import path
     - 获取当前已导入module列表
-    - 获取当前系统信息和版本等
-    - 获取当前python版本等
+- 获取当前系统信息和版本等
+- 获取当前python版本等
 
 ```python
 import sys
