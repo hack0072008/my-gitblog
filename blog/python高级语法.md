@@ -231,8 +231,12 @@ help(sys)
     version = '2.7.5 (default, Jul 13 2018, 13:06:57) \n[GCC 4.8.5 2015062...
     version_info = sys.version_info(major=2, minor=7, micro=5, releaseleve...
     warnoptions = []
-
+    
 ```
+
+#### django源码学习
+    参考：https://www.cnblogs.com/richiewlq/p/8287341.html
+    
 
 
 ~~待续~~
