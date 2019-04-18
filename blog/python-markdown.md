@@ -37,6 +37,24 @@ python:
 #### supported-extensions:
     https://python-markdown.github.io/extensions/#officially-supported-extensions
 
+- Extra	                extra       markdown.extensions.extra
+  - Abbreviations	    abbr	    markdown.extensions.abbr
+  - Attribute Lists	    attr_list	markdown.extensions.attr_list
+  - Definition Lists    def_list	markdown.extensions.def_list
+  - Fenced Code Blocks	fenced_code	markdown.extensions.fenced_code
+  - Footnotes	        footnotes	markdown.extensions.footnotes
+  - Tables	            tables	    markdown.extensions.tables
+- Admonition	        admonition	markdown.extensions.admonition
+- CodeHilite	        codehilite	markdown.extensions.codehilite
+- Legacy                Attributes	legacy_attr	markdown.extensions.legacy_attr
+- Legacy Emphasis	    legacy_em	markdown.extensions.legacy_em
+- Meta-Data	            meta	    markdown.extensions.meta
+- New Line to Break	    nl2br	    markdown.extensions.nl2br
+- Sane Lists	        sane_lists	markdown.extensions.sane_lists
+- SmartyPants	        smarty	    markdown.extensions.smarty
+- Table of Contents	    toc	        markdown.extensions.toc
+- WikiLinks	            wikilinks	markdown.extensions.wikilinks
+
 #### doc
     https://python-markdown.github.io/cli/
     https://python-markdown.github.io/extensions/
