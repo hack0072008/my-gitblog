@@ -28,7 +28,7 @@ python:
     input_file = codecs.open("some_file.md", mode="r", encoding="utf-8")
     text = input_file.read()
     
-    html = markdown.markdown(text, extensions=['nl2br'])
+    html = markdown.markdown(text, extensions=['nl2br', 'fenced_code'])
     
     output_file = codecs.open("some_file.html", mode="w", encoding="utf-8")
     output_file.write(html)
