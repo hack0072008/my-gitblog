@@ -15,6 +15,7 @@ summary: python-markdown使用
     pip install markdown
 
 #### useage
+:joy:
 ```shell
 shell:
     markdown_py -o html -x nl2br -x tables -x fenced_code -x abbr python-syntax.md -f python-syntax.html
@@ -66,4 +67,4 @@ python:
     
 
 
-~~~~完 :joy: ~~~~
+~~~~完~~~~
