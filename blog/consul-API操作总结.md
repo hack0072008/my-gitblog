@@ -12,14 +12,14 @@ summary: consul-API操作总结
 
 
 
-#### 案例：
+#### 案例一 kv.delete：
     conn.kv.delete(key = 'deploy/deployGroup/media/info', recurse = True)
     - 如果info是key且存在，则会删除info*的所有key,media目录保留；
       如果info是key且不存在，则无操作,media目录保留
     - 如果info是目录且存在，则会删除info*的所有key和目录,media目录保留；
       如果info是目录且不存在，则无操作,media目录保留
 
-#### 总结：
+#### 总结一 kv.delete：
 1. recurse,目录递归参数
    - 删除目录时True  xxx*  匹配删除
    - 删除key时False  xxx   匹配删除
