@@ -21,8 +21,8 @@ summary: consul-API操作总结
 
 #### 总结：
 1. recurse,目录递归参数
-      删除目录时True  xxx*  匹配删除
-      删除key时False  xxx   匹配删除
+   - 删除目录时True  xxx*  匹配删除
+   - 删除key时False  xxx   匹配删除
       
 2. key, 删除指定的kv值
       目录 xxx/yyy/
