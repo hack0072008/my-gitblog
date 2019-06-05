@@ -18,5 +18,5 @@ summary: Istio服务网格
     https://istio.io/zh/docs/concepts/what-is-istio/
     
 #### 官方架构图
-    http://www.etcunion.com/static/istio-arch.svg
 ![istio架构图](http://www.etcunion.com/static/istio-arch.svg)
+
