@@ -20,4 +20,3 @@ summary: Istio服务网格
 #### 官方架构图
     http://www.etcunion.com/static/istio-arch.svg
 ![istio架构图](http://www.etcunion.com/static/istio-arch.svg)
-![image](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
